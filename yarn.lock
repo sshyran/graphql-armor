@@ -774,10 +774,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-string-parser@npm:^7.19.4":
+  version: 7.19.4
+  resolution: "@babel/helper-string-parser@npm:7.19.4"
+  checksum: b2f8a3920b30dfac81ec282ac4ad9598ea170648f8254b10f475abe6d944808fb006aab325d3eb5a8ad3bea8dfa888cfa6ef471050dae5748497c110ec060943
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-identifier@npm:^7.16.7, @babel/helper-validator-identifier@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/helper-validator-identifier@npm:7.18.6"
   checksum: e295254d616bbe26e48c196a198476ab4d42a73b90478c9842536cf910ead887f5af6b5c4df544d3052a25ccb3614866fa808dc1e3a5a4291acd444e243c0648
+  languageName: node
+  linkType: hard
+
+"@babel/helper-validator-identifier@npm:^7.19.1":
+  version: 7.19.1
+  resolution: "@babel/helper-validator-identifier@npm:7.19.1"
+  checksum: 0eca5e86a729162af569b46c6c41a63e18b43dbe09fda1d2a3c8924f7d617116af39cac5e4cd5d431bb760b4dca3c0970e0c444789b1db42bcf1fa41fbad0a3a
   languageName: node
   linkType: hard
 
@@ -857,6 +871,15 @@ __metadata:
   bin:
     parser: ./bin/babel-parser.js
   checksum: af86d829bfeb60e0dcf54a43489c2514674b6c8d9bb24cf112706772125752fcd517877ad30501d533fa85f70a439d02eebeec3be9c2e95499853367184e0da7
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.20.7":
+  version: 7.21.3
+  resolution: "@babel/parser@npm:7.21.3"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: a71e6456a1260c2a943736b56cc0acdf5f2a53c6c79e545f56618967e51f9b710d1d3359264e7c979313a7153741b1d95ad8860834cc2ab4ce4f428b13cc07be
   languageName: node
   linkType: hard
 
@@ -1921,6 +1944,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.20.7":
+  version: 7.21.3
+  resolution: "@babel/types@npm:7.21.3"
+  dependencies:
+    "@babel/helper-string-parser": ^7.19.4
+    "@babel/helper-validator-identifier": ^7.19.1
+    to-fast-properties: ^2.0.0
+  checksum: b750274718ba9cefd0b81836c464009bb6ba339fccce51b9baff497a0a2d96c044c61dc90cf203cec0adc770454b53a9681c3f7716883c802b85ab84c365ba35
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -2631,7 +2665,7 @@ __metadata:
     "@escape.tech/mookme": 2.2.0-beta.6
     "@preconstruct/cli": 2.2.1
     "@trivago/prettier-plugin-sort-imports": 3.3.0
-    "@types/babel__core": 7.1.19
+    "@types/babel__core": 7.20.0
     "@types/babel__preset-env": 7.9.2
     "@typescript-eslint/eslint-plugin": 5.37.0
     "@typescript-eslint/parser": 5.37.0
@@ -3977,7 +4011,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/babel__core@npm:7.1.19, @types/babel__core@npm:^7.1.14":
+"@types/babel__core@npm:7.20.0":
+  version: 7.20.0
+  resolution: "@types/babel__core@npm:7.20.0"
+  dependencies:
+    "@babel/parser": ^7.20.7
+    "@babel/types": ^7.20.7
+    "@types/babel__generator": "*"
+    "@types/babel__template": "*"
+    "@types/babel__traverse": "*"
+  checksum: 49b601a0a7637f1f387442c8156bd086cfd10ff4b82b0e1994e73a6396643b5435366fb33d6b604eade8467cca594ef97adcbc412aede90bb112ebe88d0ad6df
+  languageName: node
+  linkType: hard
+
+"@types/babel__core@npm:^7.1.14":
   version: 7.1.19
   resolution: "@types/babel__core@npm:7.1.19"
   dependencies:
